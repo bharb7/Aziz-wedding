@@ -15,36 +15,36 @@ import { X, Plus, Trash2, Users, AlertTriangle, CheckCircle2, Search, RefreshCw,
 // ---------- Table layout (mirrors the real Beit Al Ward floor plan) ----------
 // bride: true => bride's side — shown in pink, but fully usable, not locked.
 const TABLE_DEFS = [
-  { id: 1, cap: 28, shape: "bigoval", x: 18, y: 58, bride: true },
-  { id: 2, cap: 28, shape: "bigoval", x: 18, y: 42, bride: false },
-  { id: 3, cap: 10, shape: "round", x: 19, y: 29, bride: false },
-  { id: 4, cap: 10, shape: "round", x: 27, y: 19, bride: false },
-  { id: 5, cap: 10, shape: "round", x: 38, y: 14, bride: false },
-  { id: 9, cap: 10, shape: "round", x: 62, y: 14, bride: false },
-  { id: 10, cap: 10, shape: "round", x: 73, y: 19, bride: false },
-  { id: 11, cap: 10, shape: "round", x: 81, y: 29, bride: false },
-  { id: 12, cap: 28, shape: "bigoval", x: 82, y: 42, bride: false },
-  { id: 13, cap: 28, shape: "bigoval", x: 82, y: 58, bride: false },
-  { id: 14, cap: 10, shape: "round", x: 81, y: 71, bride: false },
-  { id: 15, cap: 10, shape: "round", x: 86, y: 81, bride: false },
-  { id: 16, cap: 10, shape: "round", x: 89, y: 91, bride: false },
-  { id: 17, cap: 16, shape: "film", x: 78, y: 97, bride: false },
-  { id: 18, cap: 16, shape: "film", x: 22, y: 97, bride: true },
-  { id: 19, cap: 10, shape: "round", x: 11, y: 91, bride: true },
-  { id: 20, cap: 10, shape: "round", x: 14, y: 81, bride: true },
-  { id: 21, cap: 10, shape: "round", x: 19, y: 71, bride: true },
-  { id: 22, cap: 16, shape: "film", x: 33, y: 69, bride: true },
-  { id: 23, cap: 16, shape: "fan", x: 40, y: 62, bride: true },
-  { id: 24, cap: 16, shape: "oval", x: 45, y: 55, bride: true },
-  { id: 25, cap: 16, shape: "oval", x: 45, y: 45, bride: false },
-  { id: 26, cap: 16, shape: "fan", x: 40, y: 38, bride: false },
-  { id: 27, cap: 16, shape: "film", x: 33, y: 31, bride: false },
-  { id: 28, cap: 16, shape: "film", x: 67, y: 31, bride: false },
-  { id: 29, cap: 16, shape: "fan", x: 60, y: 38, bride: false },
-  { id: 30, cap: 16, shape: "oval", x: 55, y: 45, bride: false },
-  { id: 31, cap: 16, shape: "oval", x: 55, y: 55, bride: false },
-  { id: 32, cap: 16, shape: "fan", x: 60, y: 62, bride: false },
-  { id: 33, cap: 16, shape: "film", x: 67, y: 69, bride: false },
+  { id: 1, cap: 28, shape: "bigoval", x: 18.1, y: 61.6, bride: true },
+  { id: 2, cap: 28, shape: "bigoval", x: 18.1, y: 38.4, bride: false },
+  { id: 3, cap: 10, shape: "round", x: 23.8, y: 23.8, bride: false },
+  { id: 4, cap: 10, shape: "round", x: 36.1, y: 15.7, bride: false },
+  { id: 5, cap: 10, shape: "round", x: 50.0, y: 13.0, bride: false },
+  { id: 9, cap: 10, shape: "round", x: 62.7, y: 15.2, bride: false },
+  { id: 10, cap: 10, shape: "round", x: 75.2, y: 22.9, bride: false },
+  { id: 11, cap: 10, shape: "round", x: 83.5, y: 34.4, bride: false },
+  { id: 12, cap: 28, shape: "bigoval", x: 81.9, y: 38.4, bride: false },
+  { id: 13, cap: 28, shape: "bigoval", x: 81.9, y: 61.6, bride: false },
+  { id: 14, cap: 10, shape: "round", x: 51.3, y: 87.0, bride: false },
+  { id: 15, cap: 10, shape: "round", x: 65.6, y: 83.5, bride: false },
+  { id: 16, cap: 10, shape: "round", x: 77.5, y: 74.8, bride: false },
+  { id: 17, cap: 16, shape: "film", x: 76, y: 94, bride: false },
+  { id: 18, cap: 16, shape: "film", x: 24, y: 94, bride: true },
+  { id: 19, cap: 10, shape: "round", x: 48.7, y: 87.0, bride: true },
+  { id: 20, cap: 10, shape: "round", x: 35.5, y: 84.1, bride: true },
+  { id: 21, cap: 10, shape: "round", x: 23.8, y: 76.2, bride: true },
+  { id: 22, cap: 16, shape: "film", x: 43.5, y: 74.1, bride: true },
+  { id: 23, cap: 16, shape: "fan", x: 32.3, y: 67.7, bride: true },
+  { id: 24, cap: 16, shape: "oval", x: 35.5, y: 53.9, bride: true },
+  { id: 25, cap: 16, shape: "oval", x: 35.9, y: 44.9, bride: false },
+  { id: 26, cap: 16, shape: "fan", x: 33.9, y: 30.8, bride: false },
+  { id: 27, cap: 16, shape: "film", x: 43.5, y: 25.9, bride: false },
+  { id: 28, cap: 16, shape: "film", x: 56.5, y: 25.9, bride: false },
+  { id: 29, cap: 16, shape: "fan", x: 67.7, y: 32.3, bride: false },
+  { id: 30, cap: 16, shape: "oval", x: 64.1, y: 44.9, bride: false },
+  { id: 31, cap: 16, shape: "oval", x: 64.5, y: 53.9, bride: false },
+  { id: 32, cap: 16, shape: "fan", x: 70.5, y: 64.3, bride: false },
+  { id: 33, cap: 16, shape: "film", x: 62.5, y: 71.7, bride: false },
 ];
 
 // ---------- Seed guest data: full master list from the guest spreadsheet ----------
@@ -571,12 +571,37 @@ export default function App() {
 
       {/* ---------- Floor plan ---------- */}
       <main className="max-w-7xl mx-auto px-4 py-6">
-        <div className="relative bg-white rounded-2xl border border-[#E4D9C8] shadow-sm mx-auto" style={{ maxWidth: 820, aspectRatio: "0.72" }}>
-          <div className="absolute pointer-events-none bg-[#F7F1E8]" style={{ left: "47%", top: "30%", width: "6%", height: "40%" }} />
-          <div className="absolute pointer-events-none bg-[#F7F1E8]" style={{ top: "47%", left: 0, width: "100%", height: "6%" }} />
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-28 h-28 rounded-full border-2 border-dashed border-[#E8C9B8] flex items-center justify-center bg-[#FAF6F0]">
-              <span className="text-[#B8935F] font-semibold text-xs text-center" style={{ fontFamily: "'Amiri', serif" }}>بيت<br/>الورد</span>
+        <div className="relative bg-white rounded-2xl border border-[#E4D9C8] shadow-sm mx-auto overflow-hidden" style={{ maxWidth: 980, aspectRatio: "1.35" }}>
+          {/* Architectural line drawing: room walls, three concentric rings, corridor, screen, stage, entrance */}
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0 w-full h-full pointer-events-none">
+            {/* room walls */}
+            <rect x="3" y="4" width="94" height="90" fill="none" stroke="#E4D9C8" strokeWidth="0.5" />
+            {/* floral top border, simple repeated marks */}
+            {Array.from({ length: 18 }).map((_, i) => (
+              <text key={i} x={6 + i * 5.2} y="8.5" fontSize="3.2" fill="#E8C9B8" textAnchor="middle">✻</text>
+            ))}
+            {/* three concentric rings */}
+            <circle cx="50" cy="50" r="9" fill="#FAF6F0" stroke="#E8C9B8" strokeWidth="0.6" />
+            <circle cx="50" cy="50" r="20" fill="none" stroke="#E4D9C8" strokeWidth="0.4" />
+            <circle cx="50" cy="50" r="30" fill="none" stroke="#E4D9C8" strokeWidth="0.4" />
+            {/* horizontal corridor to screen (west) and stage (east) */}
+            <rect x="10" y="46" width="17" height="8" fill="#F7F1E8" stroke="#E4D9C8" strokeWidth="0.3" />
+            <rect x="73" y="46" width="17" height="8" fill="#F7F1E8" stroke="#E4D9C8" strokeWidth="0.3" />
+            {/* screen box, west wall */}
+            <rect x="4" y="44" width="4" height="12" fill="none" stroke="#B8935F" strokeWidth="0.5" />
+            {/* stage pillars (steps), east wall */}
+            <circle cx="94" cy="47" r="1.6" fill="#F0D3E1" stroke="#C0678C" strokeWidth="0.4" />
+            <circle cx="94" cy="53" r="1.6" fill="#F0D3E1" stroke="#C0678C" strokeWidth="0.4" />
+            <path d="M 90 45 Q 96 50 90 55" fill="none" stroke="#C0678C" strokeWidth="0.4" />
+            {/* entrance gap, south wall, between 17 and 18 */}
+            <line x1="3" y1="94" x2="42" y2="94" stroke="#E4D9C8" strokeWidth="0.5" />
+            <line x1="58" y1="94" x2="97" y2="94" stroke="#E4D9C8" strokeWidth="0.5" />
+            <text x="50" y="97.5" fontSize="2.6" fill="#B8935F" textAnchor="middle">المدخل</text>
+          </svg>
+
+          <div className="absolute pointer-events-none" style={{ left: "50%", top: "50%", transform: "translate(-50%,-50%)", width: "16%", aspectRatio: "1" }}>
+            <div className="w-full h-full rounded-full flex items-center justify-center">
+              <span className="text-[#B8935F] font-semibold text-[10px] text-center" style={{ fontFamily: "'Amiri', serif" }}>بيت<br/>الورد</span>
             </div>
           </div>
 
