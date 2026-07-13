@@ -15,36 +15,36 @@ import { X, Plus, Trash2, Users, AlertTriangle, CheckCircle2, Search, RefreshCw,
 // ---------- Table layout (mirrors the real Beit Al Ward floor plan) ----------
 // bride: true => bride's side — shown in pink, but fully usable, not locked.
 const TABLE_DEFS = [
-  { id: 1, cap: 28, shape: "oval", x: 42, y: 6, bride: true },
-  { id: 2, cap: 28, shape: "oval", x: 58, y: 6, bride: false },
-  { id: 3, cap: 10, shape: "round", x: 71, y: 10, bride: false },
-  { id: 4, cap: 10, shape: "round", x: 80, y: 16, bride: false },
-  { id: 5, cap: 10, shape: "round", x: 86, y: 24, bride: false },
-  { id: 9, cap: 10, shape: "round", x: 89, y: 66, bride: false },
-  { id: 10, cap: 10, shape: "round", x: 84, y: 74, bride: false },
-  { id: 11, cap: 10, shape: "round", x: 77, y: 81, bride: false },
-  { id: 12, cap: 28, shape: "oval", x: 60, y: 87, bride: false },
-  { id: 13, cap: 28, shape: "oval", x: 40, y: 87, bride: false },
-  { id: 14, cap: 10, shape: "round", x: 23, y: 81, bride: false },
-  { id: 15, cap: 10, shape: "round", x: 16, y: 74, bride: false },
-  { id: 16, cap: 10, shape: "round", x: 11, y: 66, bride: false },
-  { id: 17, cap: 16, shape: "film", x: 9, y: 55, bride: false },
-  { id: 18, cap: 16, shape: "film", x: 9, y: 44, bride: true },
-  { id: 19, cap: 10, shape: "round", x: 11, y: 33, bride: true },
-  { id: 20, cap: 10, shape: "round", x: 16, y: 24, bride: true },
-  { id: 21, cap: 10, shape: "round", x: 23, y: 16, bride: true },
-  { id: 22, cap: 16, shape: "film", x: 32, y: 32, bride: true },
-  { id: 23, cap: 16, shape: "fan", x: 37, y: 41, bride: true },
-  { id: 24, cap: 16, shape: "oval", x: 41, y: 22, bride: true },
-  { id: 25, cap: 16, shape: "oval", x: 59, y: 22, bride: false },
-  { id: 26, cap: 16, shape: "fan", x: 63, y: 41, bride: false },
-  { id: 27, cap: 16, shape: "film", x: 68, y: 32, bride: false },
-  { id: 28, cap: 16, shape: "fan", x: 63, y: 60, bride: false },
-  { id: 29, cap: 16, shape: "fan", x: 68, y: 51, bride: false },
-  { id: 30, cap: 16, shape: "oval", x: 59, y: 70, bride: false },
-  { id: 31, cap: 16, shape: "oval", x: 41, y: 70, bride: false },
-  { id: 32, cap: 16, shape: "fan", x: 37, y: 60, bride: false },
-  { id: 33, cap: 16, shape: "film", x: 32, y: 51, bride: false },
+  { id: 1, cap: 28, shape: "bigoval", x: 18, y: 58, bride: true },
+  { id: 2, cap: 28, shape: "bigoval", x: 18, y: 42, bride: false },
+  { id: 3, cap: 10, shape: "round", x: 19, y: 29, bride: false },
+  { id: 4, cap: 10, shape: "round", x: 27, y: 19, bride: false },
+  { id: 5, cap: 10, shape: "round", x: 38, y: 14, bride: false },
+  { id: 9, cap: 10, shape: "round", x: 62, y: 14, bride: false },
+  { id: 10, cap: 10, shape: "round", x: 73, y: 19, bride: false },
+  { id: 11, cap: 10, shape: "round", x: 81, y: 29, bride: false },
+  { id: 12, cap: 28, shape: "bigoval", x: 82, y: 42, bride: false },
+  { id: 13, cap: 28, shape: "bigoval", x: 82, y: 58, bride: false },
+  { id: 14, cap: 10, shape: "round", x: 81, y: 71, bride: false },
+  { id: 15, cap: 10, shape: "round", x: 86, y: 81, bride: false },
+  { id: 16, cap: 10, shape: "round", x: 89, y: 91, bride: false },
+  { id: 17, cap: 16, shape: "film", x: 78, y: 97, bride: false },
+  { id: 18, cap: 16, shape: "film", x: 22, y: 97, bride: true },
+  { id: 19, cap: 10, shape: "round", x: 11, y: 91, bride: true },
+  { id: 20, cap: 10, shape: "round", x: 14, y: 81, bride: true },
+  { id: 21, cap: 10, shape: "round", x: 19, y: 71, bride: true },
+  { id: 22, cap: 16, shape: "film", x: 33, y: 69, bride: true },
+  { id: 23, cap: 16, shape: "fan", x: 40, y: 62, bride: true },
+  { id: 24, cap: 16, shape: "oval", x: 45, y: 55, bride: true },
+  { id: 25, cap: 16, shape: "oval", x: 45, y: 45, bride: false },
+  { id: 26, cap: 16, shape: "fan", x: 40, y: 38, bride: false },
+  { id: 27, cap: 16, shape: "film", x: 33, y: 31, bride: false },
+  { id: 28, cap: 16, shape: "film", x: 67, y: 31, bride: false },
+  { id: 29, cap: 16, shape: "fan", x: 60, y: 38, bride: false },
+  { id: 30, cap: 16, shape: "oval", x: 55, y: 45, bride: false },
+  { id: 31, cap: 16, shape: "oval", x: 55, y: 55, bride: false },
+  { id: 32, cap: 16, shape: "fan", x: 60, y: 62, bride: false },
+  { id: 33, cap: 16, shape: "film", x: 67, y: 69, bride: false },
 ];
 
 // ---------- Seed guest data: full master list from the guest spreadsheet ----------
@@ -235,10 +235,11 @@ function normalizeGuests(list) {
 
 function shapeStyle(shape) {
   switch (shape) {
-    case "oval": return { borderRadius: "50%", width: 44, height: 28 };
+    case "bigoval": return { borderRadius: "50%", width: 56, height: 34 };
+    case "oval": return { borderRadius: "50%", width: 38, height: 24 };
     case "round": return { borderRadius: "50%", width: 32, height: 32 };
     case "film": return { borderRadius: 6, width: 38, height: 24 };
-    case "fan": return { borderRadius: "50%", width: 50, height: 50 };
+    case "fan": return { borderRadius: "50%", width: 46, height: 46 };
     default: return { borderRadius: "50%", width: 34, height: 34 };
   }
 }
@@ -571,7 +572,7 @@ export default function App() {
       {/* ---------- Floor plan ---------- */}
       <main className="max-w-7xl mx-auto px-4 py-6">
         <div className="relative bg-white rounded-2xl border border-[#E4D9C8] shadow-sm mx-auto" style={{ maxWidth: 820, aspectRatio: "0.72" }}>
-          <div className="absolute pointer-events-none bg-[#F7F1E8]" style={{ left: "47%", top: 0, width: "6%", height: "100%" }} />
+          <div className="absolute pointer-events-none bg-[#F7F1E8]" style={{ left: "47%", top: "30%", width: "6%", height: "40%" }} />
           <div className="absolute pointer-events-none bg-[#F7F1E8]" style={{ top: "47%", left: 0, width: "100%", height: "6%" }} />
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="w-28 h-28 rounded-full border-2 border-dashed border-[#E8C9B8] flex items-center justify-center bg-[#FAF6F0]">
@@ -909,4 +910,3 @@ function FilterPill({ label, active, onClick, accent = "#7A2E3A" }) {
     </button>
   );
 }
-
