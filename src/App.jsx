@@ -22,25 +22,25 @@ const TABLE_DEFS = [
   { id: 5, cap: 10, shape: "round", x: 50.0, y: 13.0, bride: false },
   { id: 9, cap: 10, shape: "round", x: 62.7, y: 15.2, bride: false },
   { id: 10, cap: 10, shape: "round", x: 75.2, y: 22.9, bride: false },
-  { id: 11, cap: 10, shape: "round", x: 83.5, y: 34.4, bride: false },
+  { id: 11, cap: 10, shape: "round", x: 79.2, y: 27.2, bride: false },
   { id: 12, cap: 28, shape: "bigoval", x: 81.9, y: 38.4, bride: false },
   { id: 13, cap: 28, shape: "bigoval", x: 81.9, y: 61.6, bride: false },
-  { id: 14, cap: 10, shape: "round", x: 51.3, y: 87.0, bride: false },
+  { id: 14, cap: 10, shape: "round", x: 59.6, y: 85.7, bride: false },
   { id: 15, cap: 10, shape: "round", x: 65.6, y: 83.5, bride: false },
   { id: 16, cap: 10, shape: "round", x: 77.5, y: 74.8, bride: false },
-  { id: 19, cap: 10, shape: "round", x: 48.7, y: 87.0, bride: true },
+  { id: 19, cap: 10, shape: "round", x: 40.4, y: 85.7, bride: true },
   { id: 20, cap: 10, shape: "round", x: 35.5, y: 84.1, bride: true },
   { id: 21, cap: 10, shape: "round", x: 23.8, y: 76.2, bride: true },
   { id: 22, cap: 16, shape: "film", x: 43.5, y: 74.1, bride: true },
   { id: 23, cap: 16, shape: "fan", x: 32.3, y: 67.7, bride: true },
-  { id: 24, cap: 16, shape: "oval", x: 35.5, y: 53.9, bride: true },
-  { id: 25, cap: 16, shape: "oval", x: 35.9, y: 44.9, bride: false },
+  { id: 24, cap: 16, shape: "oval", x: 28.7, y: 55.7, bride: true },
+  { id: 25, cap: 16, shape: "oval", x: 29.3, y: 42.5, bride: false },
   { id: 26, cap: 16, shape: "fan", x: 33.9, y: 30.8, bride: false },
   { id: 27, cap: 16, shape: "film", x: 43.5, y: 25.9, bride: false },
   { id: 28, cap: 16, shape: "film", x: 56.5, y: 25.9, bride: false },
   { id: 29, cap: 16, shape: "fan", x: 67.7, y: 32.3, bride: false },
-  { id: 30, cap: 16, shape: "oval", x: 64.1, y: 44.9, bride: false },
-  { id: 31, cap: 16, shape: "oval", x: 64.5, y: 53.9, bride: false },
+  { id: 30, cap: 16, shape: "oval", x: 70.7, y: 42.5, bride: false },
+  { id: 31, cap: 16, shape: "oval", x: 71.3, y: 55.7, bride: false },
   { id: 32, cap: 16, shape: "fan", x: 70.5, y: 64.3, bride: false },
   { id: 33, cap: 16, shape: "film", x: 62.5, y: 71.7, bride: false },
 ];
@@ -585,6 +585,9 @@ export default function App() {
             {/* horizontal corridor to screen (west) and stage (east) */}
             <rect x="10" y="46" width="17" height="8" fill="#F7F1E8" stroke="#E4D9C8" strokeWidth="0.3" />
             <rect x="73" y="46" width="17" height="8" fill="#F7F1E8" stroke="#E4D9C8" strokeWidth="0.3" />
+            {/* vertical corridor, top wall to circle and circle to entrance */}
+            <rect x="47" y="8" width="6" height="33" fill="#F7F1E8" stroke="#E4D9C8" strokeWidth="0.3" />
+            <rect x="47" y="59" width="6" height="33" fill="#F7F1E8" stroke="#E4D9C8" strokeWidth="0.3" />
             {/* screen box, west wall */}
             <rect x="4" y="44" width="4" height="12" fill="none" stroke="#B8935F" strokeWidth="0.5" />
             {/* stage pillars (steps), east wall */}
